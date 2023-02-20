@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --dark: #1C2331;
+    --semi-dark: #001429;
+    --main: #d62828;
+    --secondary: #FB8500;
+    --white: #FFFFFF;
+    --black: #000000;
+
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    margin: 0;
+    background-color: var(--dark);
+}
+
+.txt-main {
+    color: var(--main);
+}
+
+.txt-secondary {
+    color: var(--white);
+}
+
+/* header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: transparent;
+    padding: 1rem 10%;
+}
+
+.logo img {
+    max-height: 40px;
+    transition: all .3s ease-in-out;
+}
+
+.logo:hover img {
+    transform: scale(.9);
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    gap: 2rem;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+
+.links a:hover,
+.social-link:hover {
+    color: var(--main);
+}
