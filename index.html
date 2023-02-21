@@ -11,27 +11,38 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <a href="#" class="logo">
-                <img src="./img/logo.svg" alt="logo">
-            </a>
-            <div class="links">
-                <a href="#">strona główna</a>
-                <a href="#">projekty</a>
-                <a href="#">kontakt</a>
-            </div>
-            <div class="social-links">
-                <a href="#" class="social-link"><ion-icon name="logo-github" size="large"></ion-icon></a>
-            </div>
+        <nav>
+            <img src="./img/logoR.svg" alt="logo" class="logo">
+            <ul class="menu-items">
+                <li>Strona główna</li>
+                <li>Projekty</li>
+                <li>kontakt</li>
+                <li class="git"><a href="#"><ion-icon size="large" name="logo-github"></ion-icon></a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <h2>Witaj!</h2>
-        <h1>Nazywam się <span class="txt-main">Marcin Barszcz</span></h1>
-        <h2>i jestem pasjonatem tworzenia stron internetowych</h2>
 
-        <ion-icon name="logo-html5"></ion-icon><ion-icon name="logo-css3"></ion-icon><ion-icon name="logo-javascript"></ion-icon><ion-icon name="logo-python"></ion-icon>
+    <main>
+        <section id="text-side">
+            <h2>Nazywam się</h2>
+            <h1>Marcin Barszcz</h1>
+            <p>
+                Jestem pasjonatem tworzenia stron internetowych, specjalizuję się w HTML, CSS i JavaScript. <br> Potrzebujesz unikalnej i responsywnej strony internetowej?
+                <br> Skontaktuj się ze mną, a razem stworzymy profesjonalną stronę internetową, która spełni Twoje oczekiwania.
+            </p>
+            <a href="#" class="btn">pobierz CV</a>
+            <div class="clients-logos">
+                <img src="./assets/images/client-databiz.svg" />
+                <img src="./assets/images/client-audiophile.svg" />
+                <img src="./assets/images/client-meet.svg" />
+                <img src="./assets/images/client-maker.svg" />
+            </div>
+        </section>
+        <section class="img-side">
+            <img src="./assets/images/image-hero-desktop.png" />
+        </section>
     </main>
+
     <footer></footer>
 
     <!-- scripts -->
